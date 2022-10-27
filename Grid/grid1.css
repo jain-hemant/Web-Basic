@@ -1,0 +1,152 @@
+/* #container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+#container>div{
+    border: 1px solid #120;
+}
+#header{
+    grid-column: 1/4;
+    grid-row: 1;
+}
+#left{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+#main{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+#right{
+    grid-column: 3/4;
+    grid-row: 2;
+}
+#footer{
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+#container2{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: 
+        "h h h"
+        "l m r"
+        "l f f"
+    ;
+}
+#container2>div{
+    border: 1px solid #120;
+}
+#header2{
+    grid-area: h;
+}
+#left2{
+    grid-area: r;
+}
+#right2{
+    grid-area: l;
+}
+#main2{
+    grid-area: m;
+}
+#footer2{
+    grid-area: f;
+}
+
+@media all and (max-width:420px){
+    #container2{        
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "h"
+            "l"
+            "m"
+            "r"
+            "f"
+        ;
+    }
+} */
+
+#container4{
+    margin-top: 10px;
+    border: 1px solid #120;
+    display: grid;
+   
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "n n n n n n n n n n n n"
+        "l1 l1 l1 l1 m1 m1 m1 m1 r1 r1 r1 r1"
+        "l2 l2 l2 l2 l2 l2 r2 r2 r2 r2 r2 r2"
+        "l3 l3 l3 r3 r3 r3 r3 r3 r3 r3 r3 r3"
+        "l4 l4 l4 l4 l4 l4 l4 l4 l4 r4 r4 r4"
+        "f f f f f f f f f f f f"
+        ;
+}
+#container4>div{
+    border: 1px solid #120;
+    min-height: 150px;
+
+}
+
+#header4{
+    grid-area: h;
+
+}
+
+
+#nav4{
+    grid-area: n;
+}
+
+#r1{
+    grid-area: r1;
+}
+#l1{
+    grid-area: l1;
+}
+#m1{
+    grid-area: m1;
+}
+
+
+#l2{
+    grid-area: l2;
+}
+#r2{
+    grid-area: r2;
+}
+
+#l3{
+    grid-area: l3;
+}
+#r3{   
+    grid-area: r3;
+
+}
+
+ 
+#l4{
+    grid-area: l4;
+}
+#r4{
+    grid-area: r4;
+
+}
+
+
+
+
+#f{
+    grid-area: f;
+} 
+
+
+/*
+"1 15 15 15 15 2"
+"3 15 15 15 15 4"
+"5 15 15 15 15 6"
+"7 15 15 15 15 8"
+"9 10 11 12 13 14"
+*/
