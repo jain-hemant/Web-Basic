@@ -3,7 +3,7 @@ const dotenv=require("dotenv")
 const  dbconnect  = require("./src/config/dbconnect")
 const { addUser, getUser } = require("./src/controller/user.controller")
 const { addBlog, getBlogs } = require("./src/controller/blog.controller")
-
+const { addStudent, getStudent } = require("./src/controller/student.controller")
 dotenv.config()
 const port = process.env.PORT || 8080
 const app= express()
@@ -20,6 +20,10 @@ app.get("/users/getusers", getUser)
 app.post("/blogs/addblog", addBlog)
 
 app.get("/blogs/getblog", getBlogs)
+
+app.post("/students/addstudent", addStudent)
+
+app.get("/students/getstudent", getStudent)
 
 
 app.listen(port,async()=>{
